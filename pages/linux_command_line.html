@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/Global.css" />
-    <title>COURS SIO WEB | CSS</title>
+    <link rel="stylesheet" href="../css/linux_command_line.css" />
+    <title>COURS SIO WEB | Commandes Linux</title>
   </head>
   <body>
     <header>
@@ -41,40 +42,72 @@
       </nav>
     </header>
     <main>
-      <h1>Introduction à CSS</h1>
+      <h1>Mémento des commandes Linux</h1>
       <p>
-        CSS (Cascading Style Sheets) est un langage de style utilisé pour
-        décrire la présentation d'un document HTML. Il permet de contrôler
-        l'apparence visuelle des éléments d'une page web, tels que les couleurs,
-        les polices, les marges et les dispositions.
+        Retrouvez ci-dessous les commandes essentielles vues en atelier SISR.
+        Le tableau précise la description et fournit un exemple de commande à
+        reproduire dans le terminal.
       </p>
-      <p>
-        CSS a été développé par le W3C (World Wide Web Consortium) et a été
-        publié pour la première fois en 1996. Depuis lors, il a évolué pour
-        inclure de nombreuses fonctionnalités avancées, telles que les
-        animations, les transitions et les grilles.
-      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Commande</th>
+            <th>Description</th>
+            <th>Exemple d'utilisation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>ls</code></td>
+            <td>Liste le contenu du répertoire courant.</td>
+            <td><code>ls -l</code></td>
+          </tr>
+          <tr>
+            <td><code>cd</code></td>
+            <td>Change de répertoire.</td>
+            <td><code>cd /home/utilisateur</code></td>
+          </tr>
+          <tr>
+            <td><code>pwd</code></td>
+            <td>Affiche le chemin complet du dossier actuel.</td>
+            <td><code>pwd</code></td>
+          </tr>
+          <tr>
+            <td><code>mkdir</code></td>
+            <td>Crée un nouveau dossier.</td>
+            <td><code>mkdir projets</code></td>
+          </tr>
+          <tr>
+            <td><code>rm</code></td>
+            <td>Supprime un fichier (utiliser avec précaution).</td>
+            <td><code>rm notes.txt</code></td>
+          </tr>
+          <tr>
+            <td><code>cp</code></td>
+            <td>Copie un fichier ou un dossier.</td>
+            <td><code>cp source.txt sauvegarde/source.txt</code></td>
+          </tr>
+          <tr>
+            <td><code>mv</code></td>
+            <td>Déplace ou renomme un fichier.</td>
+            <td><code>mv rapport.txt archives/rapport-2024.txt</code></td>
+          </tr>
+        </tbody>
+      </table>
       <section>
-        <h2>Pourquoi utiliser CSS ?</h2>
-        <ul>
-          <li>Separer le contenu de la présentation pour faciliter la maintenance.</li>
-          <li>Appliquer des styles cohérents sur toutes les pages du site.</li>
-          <li>Créer des interfaces accessibles et responsives.</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Ressources utiles</h2>
+        <h2>Conseils pratiques</h2>
         <ul>
           <li>
-            <a href="https://developer.mozilla.org/fr/docs/Web/CSS"
-              >Documentation MDN CSS</a
-            >
+            Utilisez la touche <kbd>Tab</kbd> pour l'auto-complétion et gagner en
+            vitesse.
           </li>
           <li>
-            <a href="https://css-tricks.com/">CSS Tricks</a>
+            Combinez les commandes avec <code>&amp;&amp;</code> pour exécuter des
+            actions à la suite.
           </li>
           <li>
-            <a href="https://www.w3schools.com/css/">Tutoriels CSS W3Schools</a>
+            Consultez les pages de manuel avec <code>man commande</code> pour
+            approfondir vos connaissances.
           </li>
         </ul>
       </section>
@@ -82,7 +115,7 @@
     <footer>
       <div class="contact-form-wrapper">
         <h2>Contact</h2>
-        <p>Un retour sur le design du site ? Laissez-nous un message.</p>
+        <p>Besoin d'aide supplémentaire sur Linux ? Écrivez-nous.</p>
         <form class="contact-form" action="#" method="post">
           <label for="contact-name">Nom</label>
           <input
