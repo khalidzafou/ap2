@@ -77,6 +77,7 @@
           <a href="pages/github.html">GitHub</a>
           <a href="pages/linux.html">Linux</a>
           <a href="pages/linux_command_line.html">Ligne de commande Linux</a>
+          <a href="pages/en_construction.html">Autres pages</a>
         </div>
 
         <!--
@@ -148,7 +149,7 @@
               éléments d'une page, tels que les titres, les paragraphes, les
               liens, les images et bien d'autres contenus.
             </p>
-            <button><a href="html.html">En savoir plus</a></button>
+            <button><a href="pages/html.html">En savoir plus</a></button>
           </article>
           <!-- article sur le css-->
           <article>
@@ -160,7 +161,7 @@
               l'apparence des éléments sur une page web, tels que les couleurs,
               les polices, les marges et la disposition.
             </p>
-            <button><a href="css.html">En savoir plus</a></button>
+            <button><a href="pages/css.html">En savoir plus</a></button>
           </article>
           <!-- article sur le javascript-->
           <article>
@@ -172,7 +173,7 @@
               Il est souvent utilisé pour créer des animations, des formulaires
               interactifs et des mises à jour de contenu en temps réel.
             </p>
-            <button><a href="javascript.html">En savoir plus</a></button>
+            <button><a href="pages/javascript.html">En savoir plus</a></button>
           </article>
         </div>
         <h2>Les Langages Backend</h2>
@@ -193,7 +194,7 @@
               créer des pages web dynamiques et interactives en s'intégrant
               facilement avec des bases de données.
             </p>
-            <button><a href="php.html">En savoir plus</a></button>
+            <button><a href="pages/php.html">En savoir plus</a></button>
           </article>
           <!-- article sur le kotlin-->
           <article>
@@ -208,7 +209,7 @@
               sécurisé que Java, tout en conservant la puissance et la
               flexibilité de la plateforme Java.
             </p>
-            <button><a href="kotlin.html">En savoir plus</a></button>
+            <button><a href="pages/kotlin.html">En savoir plus</a></button>
           </article>
           <!-- article sur le python-->
           <article>
@@ -222,7 +223,7 @@
               domaines, tels que le développement web, l'analyse de données,
               l'intelligence artificielle et l'automatisation des tâches.
             </p>
-            <button><a href="python.html">En savoir plus</a></button>
+            <button><a href="pages/python.html">En savoir plus</a></button>
           </article>
           <!-- article sur le SQL-->
           <article>
@@ -235,7 +236,7 @@
               création, la lecture, la mise à jour et la suppression de données
               dans une base de données.
             </p>
-            <button><a href="sql.html">En savoir plus</a></button>
+            <button><a href="pages/sql.html">En savoir plus</a></button>
           </article>
         </div>
       </section>
@@ -260,7 +261,7 @@
             avancées telles que la liaison de données bidirectionnelle, la
             gestion des composants et l'injection de dépendances.
           </p>
-          <button><a href="angular.html">En savoir plus</a></button>
+            <button><a href="pages/angular.html">En savoir plus</a></button>
         </article>
       </section>
       <!--
@@ -286,7 +287,7 @@
               dans le développement logiciel pour gérer le code source et
               faciliter le travail en équipe.
             </p>
-            <button><a href="git.html">En savoir plus</a></button>
+            <button><a href="pages/git.html">En savoir plus</a></button>
           </article>
           <!-- article sur GitHub-->
           <article>
@@ -300,7 +301,7 @@
               la gestion des problèmes, les demandes de tirage (pull requests)
               et l'intégration continue.
             </p>
-            <button><a href="github.html">En savoir plus</a></button>
+            <button><a href="pages/github.html">En savoir plus</a></button>
           </article>
 
           <!-- article sur linux-->
@@ -314,7 +315,7 @@
               sa stabilité, sa sécurité et sa flexibilité, ce qui en fait un
               choix populaire pour les développeurs et les entreprises.
             </p>
-            <button><a href="linux.html">En savoir plus</a></button>
+            <button><a href="pages/linux.html">En savoir plus</a></button>
           </article>
           <!-- article sur ligne de commande linux-->
           <article>
@@ -330,7 +331,7 @@
               rapidité et son efficacité.
             </p>
             <button>
-              <a href="linux_command_line.html">En savoir plus</a>
+              <a href="pages/linux_command_line.html">En savoir plus</a>
             </button>
           </article>
         </div>
@@ -342,6 +343,41 @@
       Ici, il affiche un message de droits d'auteur.
     -->
     <footer>
+      <div class="contact-form-wrapper">
+        <h2>Contact</h2>
+        <p>Une question ? Envoyez-nous un message via ce formulaire de contact.</p>
+        <!-- Formulaire de contact commun à l'ensemble du site -->
+        <!-- L'attribut action indiquerait normalement l'URL de traitement. # garde le visiteur sur la page. -->
+        <!-- L'attribut method=\"post\" envoie les données dans le corps de la requête. -->
+        <form class="contact-form" action="#" method="post">
+          <label for="contact-name">Nom</label>
+          <!-- name identifie la donnée côté serveur, required force la saisie avant l'envoi. -->
+          <input
+            type="text"
+            id="contact-name"
+            name="contact-name"
+            required
+          />
+
+          <label for="contact-email">Email</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="contact-email"
+            required
+          />
+
+          <label for="contact-message">Message</label>
+          <textarea
+            id="contact-message"
+            name="contact-message"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
       <p>&copy; 2023 COURS SIO WEB LDV Melun. Tous droits réservés.</p>
     </footer>
     <!-- script en bas de page aprés le footer-->
